@@ -125,6 +125,16 @@ h6 {
   z-index: 996;
 }
 
+.memebers{
+  height: 60px;
+  padding: 0;
+  font-size: 14px;
+  transition: all 0.5s;
+  overflow: hidden;
+  z-index: 996;
+  background-color: rgba(158, 97, 5, 0.9);
+}
+
 #topbar.topbar-scrolled {
   top: -60px;
 }
@@ -1284,6 +1294,7 @@ section {
 .team .member .pic {
   overflow: hidden;
   width: 180px;
+  height: 180px;
   border-radius: 50%;
 }
 
