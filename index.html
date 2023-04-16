@@ -336,10 +336,11 @@
               <br>
               <br>
               <center>
-              <p>
-                <a href="./assets/docs/AMRIT Conference (Hybrid).pdf" download=""><button class="btn btn-primary align-items-center">Details</button></a>
-              </p>
-            </center>
+                <p>
+                  <a href="./assets/docs/AMRIT Conference (Hybrid).pdf" download=""><button
+                      class="btn btn-primary align-items-center">Details</button></a>
+                </p>
+              </center>
             </div>
           </div>
         </div>
@@ -404,8 +405,9 @@
           <h2>Updates</h2>
           <p>List of current events</p>
         </div>
-        <!-- <div id="latest">
-        </div> -->
+        <!-- Fetch latest updates
+           <div id="latest"></div> -->
+        
       </div>
     </section>
     <section id="team" class="team section-bg">
@@ -415,37 +417,39 @@
           <h2>Committees</h2>
           <p>Organizing Committee</p>
         </div>
-
         <div class="row" id="newTeam">
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-10 mt-4" data-aos="fade-up" data-aos-delay="100">
             <div class="member d-flex align-items-start">
-              <div class="pic"><img src="https://nith.ac.in/uploads/topics/hms16438810105577.jpg" class="img-fluid" alt=""></div>
+              <div class="pic"><img src="assets/img/team/dir.jpg" class="img-fluid" alt=""></div>
               <div class="member-info">
                 <h4>Prof. (Dr.) H.M. Suryawanshi</h4>
                 <span>Director, NIT Hamirpur</span>
                 <p>Patron</p>
+                <p>The marketing domain has embraced technology to adapt to the ever-changing dynamics of business. The AMRIT-2023 National Conference will help businesses gain a competitive edge and lead in an ever-changing industry ecosystem. Furthermore, AMRIT-2023 brings together leading experts, practitioners, and academics from the marketing & technology ecosystem - brand agencies, digital marketing, cutting-edge technology, marketers, technology evangelists, and experts, powering the next generation of marketing. We expect that all submissions must be of high quality, rigorous, and novel in their approach from the allied domains of management and technology.We extend our heartfelt thanks to the Patron, Chairman, Dean (FW), NITH and registrar NITH for allowing us to organize AMRIT-2023 with in a such a short span of time. The marketing domain has embraced technology to cope with the ever-changing dynamics of the business. " Advances in marketing paradigms for research, innovation & technology’" would assist businesses develop their competitive edge and lead in the ever-changing industry ecosystem. Further AMRIT-2023 brings together leading experts, practitioners, and academicians in the marketing & technology ecosystem - brand agencies, digital agencies, new age technology companies, marketers, technology evangelists, experts, and platforms powering the next generation of the Marketing and other allied domains. We expect all submissions to be reach in quality, rigorous and novel in its approach from allied domains of management and technology.</p>
               </div>
             </div>
           </div>
+        </div>
+
+        <div class="section-title">
 
         </div>
+        <!-- Advisory Members List
+        <div class="section-title">
+          <p>Conference Advisory Committee</p>
+        </div>
+        <div class="row" id="advisoryMembers"></div>
+       -->
         <div class="section-title">
          
+          <div class="btn-wrap">
+            <a href="portfolio-details.html" class="btn-buy">Message From Committee</a>
+          </div>
         </div>
+      
 
-        <div class="section-title">
-            <p>
-              <!-- <a href="./members.html"><button class="btn btn-primary align-items-center">More Members</button></a> -->
-            </p>
-        </div>
-       
       </div>
     </section>
-
-
-
-
     <section id="contact" class="contact">
       <div class="container" data-aos="fade-up">
 
@@ -491,9 +495,6 @@
 
       </div>
     </section>
-    <!-- ======= Portfoio Section ======= -->
-   
-    <!-- End Portfoio Section -->
   </main>
 
 
@@ -505,7 +506,8 @@
         &copy; 2023 All Rights Reserved | National Institute of Technology Hamirpur
       </div>
       <div class="credits">
-        Designed by <a href="https://suyash-srivastava-dev.github.io/portfolio/">Suyash Srivastava (Mtech AI)</a> | <a href="https://github.com/SubramanyamSahoo">Subramanyam Sahoo(Mtech AI)</a>
+        Designed by <a href="https://suyash-srivastava-dev.github.io/portfolio/">Suyash Srivastava</a> | <a
+          href="https://github.com/SubramanyamSahoo">Subramanyam Sahoo</a>
       </div>
     </div>
   </footer>
@@ -549,6 +551,47 @@
         })
     }
 
+    function fetch_advisory_team() {
+      fetch("https://raw.githubusercontent.com/suyash-srivastava-dev/data/main/AdvisoryCommitee.json").then(res => res.json())
+        .then(res => {
+          str_body = ""
+          res.forEach(r => {
+            let myArray = r["Names"].split(",");
+            if (myArray[2] === undefined) {
+              str_body +=
+                `
+            <div class="col-lg-3 mt-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="member d-flex align-items-start">
+              <!-- <div class="pic"><img src="https://nith.ac.in/uploads/topics/hms16438810105577.jpg" class="img-fluid" alt=""></div> -->
+              <div class="">
+                <h4>${myArray[0]}</h4>
+                <span></span>
+                <p>${myArray[1]}</p>
+              </div>
+            </div>
+          </div>      
+        `
+            }
+            else {
+              str_body +=
+                `
+            <div class="col-lg-3 mt-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="member d-flex align-items-start">
+              <!-- <div class="pic"><img src="https://nith.ac.in/uploads/topics/hms16438810105577.jpg" class="img-fluid" alt=""></div> -->
+              <div class="">
+                <h4>${myArray[0]}</h4>
+                
+                <span>${myArray[1]}</span>
+                <p>${myArray[2]}</p>
+              </div>
+            </div>
+          </div>      
+        `
+            }
+          });
+          $("#advisoryMembers").html(str_body)
+        })
+    }
     function fetch_team() {
       fetch("https://raw.githubusercontent.com/suyash-srivastava-dev/data/main/team.json").then(res => res.json())
         .then(res => {
@@ -563,12 +606,6 @@
                 <h4>${r["name"]}</h4>
                 <span>${r["rank"]}</span>
                 <p>${r["description"]}</p>
-                <div class="social">
-                  <a href=""><i class="ri-twitter-fill"></i></a>
-                  <a href=""><i class="ri-facebook-fill"></i></a>
-                  <a href=""><i class="ri-instagram-fill"></i></a>
-                  <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
-                </div>
               </div>
             </div>
           </div>
@@ -580,8 +617,9 @@
     }
   </script>
   <script>fetch_events()
- </script>
- <script> fetch_team()</script>
+  </script>
+  <script> fetch_team()</script>
+  <script>fetch_advisory_team()</script>
   <script src="assets/js/main.js"></script>
 
 </body>
