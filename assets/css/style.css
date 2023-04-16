@@ -789,6 +789,16 @@ section {
 .clients .swiper-slide:hover img {
   opacity: 1;
 }
+.clients .pic {
+  overflow: hidden;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+}
+
+.clients .pic img {
+  transition: ease-in-out 0.3s;
+}
 
 .clients .swiper-pagination {
   margin-top: 20px;
@@ -1244,9 +1254,19 @@ section {
 .portfolio-details {
   padding-top: 40px;
 }
+.portfolio-details .portfolio-details-slider1 img {
+  overflow: hidden;
+  width: 200px;
+  height: 200px;
+  border-radius: 4px;
 
+}
 .portfolio-details .portfolio-details-slider img {
-  width: 100%;
+  overflow: hidden;
+  width: 150px;
+  height: 150px;
+  border-radius: 2px;
+
 }
 
 .portfolio-details .portfolio-details-slider .swiper-pagination {
@@ -1267,7 +1287,8 @@ section {
 }
 
 .portfolio-details .portfolio-info {
-  padding: 30px;
+  align-items: flex-end;
+  /* padding: 30px; */
   box-shadow: 0px 0 30px rgba(246, 176, 36, 0.08);
 }
 
