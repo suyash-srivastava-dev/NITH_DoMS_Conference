@@ -1311,6 +1311,7 @@ section {
 }
 
 .portfolio-details .portfolio-description {
+  text-align: justify;
   padding-top: 30px;
   padding-left: 30px;
 }
