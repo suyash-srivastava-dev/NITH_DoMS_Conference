@@ -104,7 +104,7 @@
             <div class="icon-box">
               <div class="icon"><i class="bi bi-calendar"></i></div>
               <h4 class="title">Important Dates</h4>
-              <p class="description">Abstract Submission Deadline:<br><strong> 21 April 2023</strong><br>
+              <p class="description breakword">Abstract Submission Deadline:<br><strong> 21 April 2023</strong><br>
                 Full paper submission:<br> <strong> May 2023</strong><br>
                 Last date of registration:<br><strong> 30 June 2023</strong><br><br>
                 The presenting authors suppose to be
@@ -123,7 +123,7 @@
             <div class="icon-box">
               <div class="icon"><i class="bi bi-pencil-square"></i></div>
               <h4 class="title">Note</h4>
-              <p class="description">
+              <p class="description breakword">
                 Authors are advised to submit abstract and full paper through the given email id : <strong><a
                     href="mailto:amrit.doms.nith@gmail.com">amrit.doms.nith@gmail.com</a></strong>
               </p>
@@ -135,7 +135,7 @@
             <div class="icon-box">
               <div class="icon"><i class="bi bi-people-fill"></i></div>
               <h4 class="title">Organizers</h4>
-              <p class="description">
+              <p class="description breakword">
                 <b>Patron:</b> <br>Prof. (Dr.) H.M. Suryawanshi, Director, NIT Hamirpur<br>
                 <b>Organizing Chairman:</b><br> Prof. (Dr.) RK Dutta, NIT Hamirpur<br>
                 <b>Organizing Secretary (s):</b> <br>Dr. Shampy Kamboj, NIT Hamirpur <br> Dr. Mohd. Adil, NIT Hamirpur
@@ -150,7 +150,7 @@
             <div class="icon-box">
               <div class="icon"><i class="bx bx-layer"></i></div>
               <h4 class="title">Registration Details</h4>
-              <p class="description ">A fee of Rs. 1000 (Academic / R&D) / Rs. 2000
+              <p class="description breakword">A fee of Rs. 1000 (Academic / R&D) / Rs. 2000
                 (Corporate / Industry) / Rs. 500 (Ph. D. Scholars /
                 Students) should be paid through SBI collect in
                 the following manner:<br> Click <i class="bi bi-arrow-right-short"></i> SBI collect <i
@@ -159,7 +159,9 @@
                   class="bi bi-arrow-right-short"></i>
                 NIT Hamirpur <i class="bi bi-arrow-right-short"></i> Workshop/STC/FDP/Conference.
                 Register after payment using the link
+                <!-- <div class="breakword"> -->
                 <a href="https://forms.gle/LFdjKcF3iUuGedQ6">https://forms.gle/LFdjKcF3iUuGedQ6</a>
+              <!-- </div> -->
               </p>
             </div>
           </div>
@@ -479,8 +481,8 @@
                   in their approach from the allied domains of management and technology.We extend our heartfelt thanks
                   to the Patron, Chairman, Dean (FW), NITH and registrar NITH for allowing us to organize AMRIT-2023
                   with in a such a short span of time. The marketing domain has embraced technology to cope with the
-                  ever-changing dynamics of the business. " Advances in marketing paradigms for research, innovation &
-                  technology’" would assist businesses develop their competitive edge and lead in the ever-changing
+                  ever-changing dynamics of the business. "Advances in marketing paradigms for research, innovation &
+                  technology" would assist businesses develop their competitive edge and lead in the ever-changing
                   industry ecosystem. Further AMRIT-2023 brings together leading experts, practitioners, and
                   academicians in the marketing & technology ecosystem - brand agencies, digital agencies, new age
                   technology companies, marketers, technology evangelists, experts, and platforms powering the next
@@ -614,47 +616,49 @@
         })
     }
 
-    function fetch_advisory_team() {
-      fetch("https://raw.githubusercontent.com/suyash-srivastava-dev/data/main/AdvisoryCommitee.json").then(res => res.json())
-        .then(res => {
-          str_body = ""
-          res.forEach(r => {
-            let myArray = r["Names"].split(",");
-            if (myArray[2] === undefined) {
-              str_body +=
-                `
-            <div class="col-lg-3 mt-4" data-aos="fade-up" data-aos-delay="100">
-            <div class="member d-flex align-items-start">
-              <!-- <div class="pic"><img src="https://nith.ac.in/uploads/topics/hms16438810105577.jpg" class="img-fluid" alt=""></div> -->
-              <div class="">
-                <h4>${myArray[0]}</h4>
-                <span></span>
-                <p>${myArray[1]}</p>
-              </div>
-            </div>
-          </div>      
-        `
-            }
-            else {
-              str_body +=
-                `
-            <div class="col-lg-3 mt-4" data-aos="fade-up" data-aos-delay="100">
-            <div class="member d-flex align-items-start">
-              <!-- <div class="pic"><img src="https://nith.ac.in/uploads/topics/hms16438810105577.jpg" class="img-fluid" alt=""></div> -->
-              <div class="">
-                <h4>${myArray[0]}</h4>
+    // function fetch_advisory_team() {
+    //   fetch("https://raw.githubusercontent.com/suyash-srivastava-dev/data/main/AdvisoryCommitee.json").then(res => res.json())
+    //     .then(res => {
+    //       str_body = ""
+    //       res.forEach(r => {
+    //         let myArray = r["Names"].split(",");
+    //         if (myArray[2] === undefined) {
+    //           str_body +=
+    //             `
+    //         <div class="col-lg-3 mt-4" data-aos="fade-up" data-aos-delay="100">
+    //         <div class="member d-flex align-items-start">
+    //           <!-- <div class="pic"><img src="https://nith.ac.in/uploads/topics/hms16438810105577.jpg" class="img-fluid" alt=""></div> -->
+    //           <div class="">
+    //             <h4>${myArray[0]}</h4>
+    //             <span></span>
+    //             <p>${myArray[1]}</p>
+    //           </div>
+    //         </div>
+    //       </div>      
+    //     `
+    //         }
+    //         else {
+    //           str_body +=
+    //             `
+    //         <div class="col-lg-3 mt-4" data-aos="fade-up" data-aos-delay="100">
+    //         <div class="member d-flex align-items-start">
+    //           <!-- <div class="pic"><img src="https://nith.ac.in/uploads/topics/hms16438810105577.jpg" class="img-fluid" alt=""></div> -->
+    //           <div class="">
+    //             <h4>${myArray[0]}</h4>
                 
-                <span>${myArray[1]}</span>
-                <p>${myArray[2]}</p>
-              </div>
-            </div>
-          </div>      
-        `
-            }
-          });
-          $("#advisoryMembers").html(str_body)
-        })
-    }
+    //             <span>${myArray[1]}</span>
+    //             <p>${myArray[2]}</p>
+    //           </div>
+    //         </div>
+    //       </div>      
+    //     `
+    //         }
+    //       });
+    //       $("#advisoryMembers").html(str_body)
+    //     })
+    // }
+    
+    
     function fetch_team() {
       fetch("https://raw.githubusercontent.com/suyash-srivastava-dev/data/main/team.json").then(res => res.json())
         .then(res => {
@@ -682,7 +686,7 @@
   <script>fetch_events()
   </script>
   <script> fetch_team()</script>
-  <script>fetch_advisory_team()</script>
+  <!-- <script>fetch_advisory_team()</script> -->
   <script src="assets/js/main.js"></script>
 
 </body>
