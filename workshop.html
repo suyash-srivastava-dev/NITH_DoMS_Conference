@@ -33,8 +33,6 @@
 </head>
 
 <body>
-
-
   <div id="topbar" class="fixed-top d-flex align-items-center ">
     <div class="container d-flex align-items-center justify-content-center justify-content-md-between">
       <div class="contact-info d-flex align-items-center">
@@ -50,18 +48,29 @@
 
 
 
-      <a href="https://nith.ac.in/" class="logo"><img src="https://nith.ac.in/uploads/settings/15795036012617.png"
-          alt="logo" class="img-fluid"></a>
+      <a href="https://nith.ac.in/" class="logo">
+        <img src="./assets/img/nith-logo.png" alt="logo" class="img-fluid">
+      </a>
 
       <nav id="navbar" class="navbar">
         <ul>
           <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
           <li><a class="nav-link scrollto" href="#about">About Us</a></li>
-          <li><a class="nav-link scrollto" href="./index.html">Conference</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Events
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="workshop.html">Workshop</a></li>
+              <!-- <li><hr class="dropdown-divider"></li> -->
+              <li><a class="dropdown-item" href="index.html">Conference</a></li>
+              <!-- <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+            </ul>
+          </li>
           <!-- <li><a class="nav-link scrollto" href="workshop.html">Workshop</a></li> -->
           <li><a class="nav-link scrollto" href="#pricing">Registration</a></li>
-          <li><a class="nav-link scrollto" href="#updates">Updates</a></li>
-          <li><a class="nav-link scrollto" href="#team">Team</a></li>
+          <!-- <li><a class="nav-link scrollto" href="#updates">Updates</a></li>
+          <li><a class="nav-link scrollto" href="#team">Team</a></li> -->
           <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
@@ -71,24 +80,25 @@
   </header>
 
 
-  <section id="hero" class="d-flex justify-cntent-center align-items-center">
-    <!-- <div id="heroCarousel" data-bs-interval="5000" class="container carousel carousel-fade" data-bs-ride="carousel">
+  <section id="hero2" class="d-flex justify-cntent-center align-items-center">
+    <div id="heroCarousel" data-bs-interval="5000" class="container carousel carousel-fade" data-bs-ride="carousel">
 
 
       <div class="carousel-item active">
         <div class="carousel-container">
-          <h2 class="animate__animated animate__fadeInDown">National Workshop (Hybrid Mode)<br>on</h2>
-
-          <h2 class="animate__animated animate__fadeInDown">Advances in Marketing Paradigms for Research, Innovation and
-            Technology<br> (AMRIT 2023)</h2>
-          <p class="animate__animated animate__fadeInUp">An Initiative of Department of Management Studies <br>National
+          <h2 class="animate__animated animate__fadeInDown">Hybrid Workshop</h2>
+          <p class="animate__animated animate__fadeInDown">on</p>
+          <h2 class="animate__animated animate__fadeInDown">“Scale Development and Impactful Publication in Social
+            Sciences”</h2>
+          <p class="animate__animated animate__fadeInUp">Organized by <br> Department of Management
+            Studies <br>National
             Institute of Technology Hamirpur
-          <h2 class="animate__animated animate__fadeInUp"> Date: 17.07.2023 & 18.07.2023</h2>
+          <h2 class="animate__animated animate__fadeInUp"> Date: 19.07.2023 & 23.07.2023</h2>
 
         </div>
       </div>
 
-    </div> -->
+    </div>
 
   </section>
 
@@ -96,36 +106,40 @@
   <main id="main">
 
 
-    <!-- <section id="icon-boxes" class="icon-boxes">
+    <section id="icon-boxes" class="icon-boxes">
       <div class="container">
 
         <div class="row">
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="fade-up">
+          <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="fade-up">
             <div class="icon-box">
               <div class="icon"><i class="bi bi-calendar"></i></div>
               <h4 class="title">Important Dates</h4>
-              <p class="description">Abstract Submission Deadline: 21 April 2023<br>
-                Full paper submission: <strong> May 2023</strong><br>
-                Last date of registration:<strong> 30 June 2023</strong><br><br>
-                The presenting authors suppose to be
-                registered by 30 June 2023 for inclusion in
-                conference proceedings.
-              </p>
-              <br>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="fade-up">
-            <div class="icon-box">
-              <div class="icon"><i class="bi bi-pencil-square"></i></div>
-              <h4 class="title">Note</h4>
+              <p class="description"><strong>Pedagogy</strong></p>
               <p class="description">
-                Authors are advised to submit abstract and full paper through the given email id : <strong><a
-                    href="mailto:amrit.doms.nith@gmail.com">amrit.doms.nith@gmail.com</a></strong>
+              <ul class="description">
+                <li>Interactive sessions with subject experts</li>
+                <li>Working with real cases and data</li>
+                <li>Live demonstration and hands-on training</li>
+              </ul>
               </p>
+              <p class="description"><strong>Number of Participants</strong></p>
+              <p class="description">
+                Number of participants is limited for this Workshop. Applications will be accepted on first cum-first
+                serve basis.
+              </p>
+              <p class="description"><br><strong>Certificates</strong>
+              <br>Certificates will be provided to the participants, with at least 80% attendance, upon successful
+              completion of the program
+              <br>
+              <br>Last date of Registration:<br><strong> 15th July, 2023.</strong>
+
+              </p>
+
             </div>
           </div>
 
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="fade-up"
+
+          <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="fade-up"
             data-aos-delay="200">
             <div class="icon-box">
               <div class="icon"><i class="bi bi-people-fill"></i></div>
@@ -133,125 +147,131 @@
               <p class="description">
                 <b>Patron:</b> <br>Prof. (Dr.) H.M. Suryawanshi, Director, NIT Hamirpur<br>
                 <b>Organizing Chairman:</b><br> Prof. (Dr.) RK Dutta, NIT Hamirpur<br>
-                <b>Organizing Secretary (s):</b> <br>Dr. Shampy Kamboj, NIT Hamirpur <br> Dr. Mohd. Adil, NIT Hamirpur
+                <b>Organizing Coordinator (s):</b> <br> Dr. Mohd. Adil<br> Dr. Vivek Tiwari
+
                 <br>
-                <b>Treasurer:</b><br> Dr. Vivek Tiwari, NIT Hamirpur
+                <b>Treasurer:</b><br> Dr. Shampy Kamboj
               </p>
             </div>
           </div>
 
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="fade-up"
+          <!-- Registration -->
+          <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="fade-up"
             data-aos-delay="300">
             <div class="icon-box">
               <div class="icon"><i class="bx bx-layer"></i></div>
               <h4 class="title">Registration Details</h4>
-              <p class="description ">A fee of Rs. 1000 (Academic / R&D) / Rs. 2000
-                (Corporate / Industry) / Rs. 500 (Ph. D. Scholars /
-                Students) should be paid through SBI collect in
-                the following manner:<br> Click <i class="bi bi-arrow-right-short"></i> SBI collect <i
-                  class="bi bi-arrow-right-short"></i>
-                Educational institutions <i class="bi bi-arrow-right-short"></i> Himachal Pradesh <i
-                  class="bi bi-arrow-right-short"></i>
-                NIT Hamirpur <i class="bi bi-arrow-right-short"></i> Workshop/STC/FDP/Conference.
-                Register after payment using the link
-                <a href="https://forms.gle/LFdjKcF3iUuGedQ6">https://forms.gle/LFdjKcF3iUuGedQ6</a>
+              <p class="description ">Registration is compulsory for all the delegates. The registration fee is
+                non-refundable.
+              </p>
+              <p class="description ">
+              <ul class="description ">
+                <li>
+                  Students and Scholars – 500 Rs + 2% transaction charges
+                </li>
+                <li>
+                  Academia and R&D labs – 1000 Rs + 2% transaction charges
+                </li>
+                <li>
+                  Industry – 1500 Rs + 2% transaction charges
+                </li>
+              </ul>
+              </p>
+              <!-- <center>
+                <div class="pricing btn-wrap">
+                  <a href="#pricing" class="btn-buy">Register</a>
+                </div>
+              </center> -->
+              <p class="description"><br><strong>Who can participate?</strong><br>
+                Faculty Members, Research Scholars, Post-graduate & 
+                Graduate students, Industry professionals</p>
+            </div>
+          </div>
+          <div class="d-flex align-items-stretch mb-5 mb-lg-0 pt-4" data-aos="fade-up">
+            <div class="icon-box">
+              <div class="icon"><i class="bi bi-pencil-square"></i></div>
+              <h4 class="title">Note</h4>
+              <p class="description"><strong>Boarding & Lodging</strong></p>
+              <p class="description">
+                Limited accommodation (twin sharing) may be availed on NIT Hamirpur campus on first-cum-first basis at
+                Satpura Hostel against a nominal charge of Rs. 500/- per day (Non-AC Room)/ Rs. 650/- per day (AC Room).
+                Accommodation and food charges to be settled directly by the participants at the hostel’s guest house.
+                Please note that your registration fee does not include boarding and lodging charges.
               </p>
             </div>
           </div>
-
         </div>
 
       </div>
-    </section> -->
+    </section>
 
 
-    <!-- <section id="about" class="about">
+    <section id="about" class="about">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
           <h2>About Us</h2>
-          <p>National Institute of Technology Hamirpur is one of
-            the thirty-one NITs of the country, which came into
-            existence on 7th August 1986 as Regional Engineering
-            College, a joint and cooperative enterprise of the Govt.
-            of India and Govt. of Himachal Pradesh. On 26th June
-            2002, REC Hamirpur was awarded the status of
-            Deemed University and upgraded to National
-            Institute of Technology. NIT Hamirpur is an institute of
-            National importance set up by an act of Parliament
-            namely the National Institute of Technology Act 2007
-            which received the accent of the President of India on
-            5th June, 2007. The provisions of Act came into force
-            with effect from 15th August, 2007 as per notification
-            S.O. 1384 (E) dated 9th August, 2007 of the
-            Department of Higher Education, MHRD, New Delhi.
-            As per provisions of the said Act, the Institute runs on
-            non-profit basis.</p>
+          <p>The National Institute of Technology, Hamirpur is an Institute of National Importance. The Institute offers
+            B.Tech, M.Tech and PhD programmes in various disciplines of Engineering, Humanities and Sciences.
+            The Institute is functioning in a vast area of above 250 acres at Anu in Hamirpur district of Himachal
+            Pradesh and is 4 Kms from main bus stand of Hamirpur on Mandi-Jalandhar National Highway (NH-70). The city
+            of Hamirpur is well connected with the rest of the country by road.
+            Nearest Railway Station: UNA (about 85 Km) Nearest Airport: GAGGAL (Kangra) (about 85 Km)</p>
         </div>
 
         <div class="row content">
-          <div class="col-lg-6">
-            <img src="./assets/img/nith_gate.jpg" alt="NITH" width="540" height="405">
+          <!-- <div class="row">
+            <div class="col-md-6 col-lg-4"></div> -->
+          <div class="col-md-6">
+            <img src="./assets/img/nith_gate.jpg" alt="NITH" width="100%" height="auto">
           </div>
-          <div class="col-lg-6 pt-4 pt-lg-0">
+          <div class="col-md-6">
             <h2>Department</h2>
             <p>
-              The Department of Management Studies aims to
-              train and develop managerial thoughts beyond
-              technical competence and making the young minds
-              manage resources optimally so as to meet global
-              market demands.
+              The Department of Management Studies offers full time PG degree programme, viz. Master of Business
+              Administration (MBA). Students get the advantage of dual specialization, out of - Human Resource
+              Management, Marketing Management, Operations Management and Financial Management. The Department also
+              offers Ph.D. programmes on stipendiary and non-stipendiary basis for full time and off campus candidates.
+              The diversity of the curricula offered through the Department provides the students with the foundation
+              skills that can be used not only in the classroom, but to master challenges in globalized dynamic and
+              competitive markets. This is done through a plethora of channels including lectures, talks, case studies,
+              research projects, group discussion, workshops, seminars, etc. Faculty members possess a blend of academic
+              and professional experience, which facilitates disseminating of knowledge to the students through both
+              classroom sessions and independent student activities.
+              The faculty is highly qualified with international exposure and motivated to inculcate quest for
+              perfection among the students. Short term Training/Management Development Programmes for industry and
+              faculty are regularly organized by Department of Management Studies with MHRD and AICTE collaboration. The
+              Department has well experienced and dedicated faculty members with different specializations. We have well
+              equipped laboratories with state-of-the-art facilities like servers/workstations, desktops and mobile
+              devices.
             </p>
-            <p>
-              The Department further focuses on developing
-              managers with capability in applying management
-              know-how to conventional and non-conventional
-              problems of management. It implies a commitment
-              to focus management knowledge, skills, and
-              technologies for the betterment of society. The
-              diversity of the curricula offered through the
-              Department provides the students with the
-              foundation skills that can be used not only in the
-              classroom, but to master challenges in globalized
-              dynamic and competitive markets.
-            </p>
-
           </div>
         </div>
-
       </div>
-    </section> -->
-    <!-- <section id="services" class="services">
+    </section>
+    <section id="services" class="services">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>Conference</h2>
-          <p>AMRIT - 2023 aims to bring leading academicians,
-            researchers, and practitioners together, to
-            exchange and share their experiences and
-            research results on all aspects of advances in
-            marketing and changing marketing paradigms
-            with advertising and brand management,
-            consumer behavior, services marketing, digital
-            marketing, tourism marketing, sustainable
-            marketing, general marketing and many more.
-
-            Being conducted in a hybrid
-            (online/offline presentations)
-            manner, the platform will
-            provide a premier inter
-            disciplinary platform for
-            researchers, practitioners, &
-            educators, to present and
-            discuss the most.
-            Young researcher award for authors below 40
-            years of age.
-            Best paper award for one paper in each track.
-            All authors / presenters registered for the
-            conference will be certified
-            recent advancements in the field, innovations, and
-            practical challeges encountered and solutions
-            adopted.
+          <h2>Workshop</h2>
+          <p>Much of the quantitative research in management and social sciences deals with latent constructs - their
+            operationalization, and their inter-relationships. The operationalization process predominantly involves
+            either development of measure(s) for new construct(s) or refinement of existing measure(s) for given
+            construct(s). This workshop intends to cover both of these aspects with special focus on developing new
+            measures.
+            The motivation behind conducting this workshop is based on the philosophy that in a research anything can be
+            measured and can be managed effectively. In the development of a scale, we start from an abstract phenomenon
+            (generally called concept), define its meaning and scope, and develop its measure. It is a multi-stage
+            scientific process which incorporates qualitative ways to set up the conceptual scope of phenomenon and
+            robust quantitative assessments to establish reliability and validity.
+            Majority of scales being used in Indian context are mainly adapted versions of western scales, which do not
+            fully capture the contextual reality of the phenomenon. There have been calls in the past for developing
+            India-specific measures for various constructs (management and social science). While, few attempts have
+            been made by Indian scholars in this direction but lot more needs to be done.
+            This workshop will offers a comprehensive and in-depth understanding of scale construction and development
+            process. Session overview with an understanding of scale development process and procedure. More
+            specifically, we will explore how and when scale development is required in social science research. The
+            workshop would be useful for the faculties, trainers, researchers, and professionals.
           </p>
         </div>
 
@@ -259,24 +279,26 @@
           <div class="col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
             <div class="icon-box">
               <i class="bi bi-card-checklist"></i>
-              <h4><a href="#services">Awards & Certifications</a></h4>
+              <h4><a href="#services"> Objectives of e-Workshop</a></h4>
               <p>
                 <br>
               <ul>
                 <li>
-                  Young researcher award for authors below 40 years of age
+                  To provide hands-on training on scale development process with application of SPSS and AMOS for
+                  exploratory and confirmatory factor analysis, respectively.
                 </li>
                 <li>
-                  Best paper award for one paper in each track
+                  To explain both philosophical and technical aspects of scale development; advanced scale validation
+                  techniques –nomological, known group validation, etc.
                 </li>
                 <li>
-                  All authors / presenters registered for the conference will be certified
+                  To expose the participants to the process of adapting existing scales in research
                 </li>
               </ul>
               </p>
             </div>
           </div>
-          <div class="col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="200">
+          <!-- <div class="col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="200">
             <div class="icon-box">
               <i class="bi bi-bar-chart"></i>
               <h4><a href="#services">Publication Scope</a></h4>
@@ -305,86 +327,47 @@
                 <div class="col-lg-4 col-md-6 portfolio-item filter-web">
                   <img src="./assets/img/Journals/journal1.jpg" class="img-fluid" alt="">
                   <div class="portfolio-info">
-                    
+
                   </div>
                 </div>
                 <div class="col-lg-4 col-md-6 portfolio-item filter-web">
                   <img src="./assets/img/Journals/journal2.png" class="img-fluid" alt="">
                   <div class="portfolio-info">
-                
+
                   </div>
                 </div>
                 <div class="col-lg-4 col-md-6 portfolio-item filter-web">
                   <img src="./assets/img/Journals/Journal3.png" class="img-fluid" alt="">
                   <div class="portfolio-info">
-                    
+
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
+          </div> -->
+          <div class="col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
             <div class="icon-box">
               <i class="bi bi-binoculars"></i>
-              <h4><a href="#services">Conference Themes</a></h4>
+              <h4><a href="#services">Topics to be covered</a></h4>
               <p>
-                The said conference is proposed to cover wide themes that could correlate to research with Marketing
-                and
-                its allied areas and invites submission of papers on Themes and Sub Themes (but not limited to):
+                Need for Measurement scale, Types of Scales Formative vs. Reflective, Scale Development - Concept ,
+                Construct & Operationalization, Issues in Dimensionality –uni-dimension vs. multi-dimension constructs
+                1st order & 2nd order constructs, Identification of literature gap and Identifying dimensions –From
+                literature, Qualitative data Secondary data, Developing items using literature, Expert validation -
+                Content & Face Validity, Exploring factor analysis- Initial reliability& validity testing, Confirmatory
+                Factor Analysis, Measurement Model Construction, CFA - Testing reliability and validity Fit indices,
+                Convergent and Discriminant validity, Advanced scale validation: Nomological validity, Common Method
+                Biasness, Plagiarism in Research, Ethics in Research and Publication, Selecting a Peer-Reviewed Journal
+                for Quality Research, Publication of Quality Research in Reputed Journal
               </p>
-              <br>
-              <p>
-              <div class="row">
-                <div class="col-md-6 d-flex align-items-left" data-aos="fade-up" data-aos-delay="200">
-                  <ul>
-                    <li>Advertising and IMC</li>
-                    <li>Artificial Intelligence (AI), Augmented Reality (AR), and
-                      Virtual Reality (VR)</li>
-                    <li>Big Data, Marketing Analytics and Research Methods</li>
-                    <li>B-B Marketing</li>
-                    <li>Branding and Brand Management</li>
-                    <li>Block chain, Internet of Things (IoTs)and Marketing</li>
-                    <li>Consumer behavior</li>
-                    <li>Consumers in the Age of the Internet</li>
-                    <li>Digital Marketing</li>
-                    <li>Diversity and other allied areas Inclusion</li>
-                    <li>Ethical Marketing</li>
-                    <li>Green Marketing</li>
-                  </ul>
-                </div>
-                <div class="col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="200">
-                  <ul>
-                    <li>Innovation and new product development </li>
-                    <li>Marketing in cross-cultural and multicultural contexts</li>
-                    <li>Marketing Pedagogy and Education</li>
-                    <li>Marketing Strategy</li>
-                    <li>Mobile Marketing</li>
-                    <li>Public Policy, Sustainability and Social Responsibility</li>
-                    <li>Retailing and Omni-Channel</li>
-                    <li>Rural Marketing</li>
-                    <li>Services Marketing</li>
-                    <li>Social Media Marketing</li>
-                    <li>Sustainable Marketing</li>
-                    <li>Travel, Tourism and Hospitality Marketing</li>
-                  </ul>
-                </div>
-              </div>
-              </p>
-              <br>
-              <br>
-              <center>
-                <p>
-                  <a href="./assets/docs/AMRIT Conference (Hybrid).pdf" download=""><button
-                      class="btn btn-primary align-items-center">Details</button></a>
-                </p>
-              </center>
             </div>
           </div>
         </div>
 
       </div>
-    </section> -->
-    <!-- <section id="pricing" class="pricing">
+
+    </section>
+    <section id="pricing" class="pricing">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
@@ -393,20 +376,30 @@
             The registration fee is non-refundable.
           </p>
           <p>
-            Should be paid through SBI collect in the following manner:<br>
+            To pay through SBI Collect via select the following options<br>
             Click <i class="bi bi-arrow-right"></i> SBI collect <i class="bi bi-arrow-right"></i> Educational
             institutions <i class="bi bi-arrow-right"></i>Himachal Pradesh <i class="bi bi-arrow-right"></i>NIT
             Hamirpur<i class="bi bi-arrow-right"></i> Workshop/STC/FDP/Conference.<br> <br>Register after payment using
-            the link <a href="https://forms.gle/LFdjKcF3iUuGedQ6"> https://forms.gle/LFdjKcF3iUuGedQ6 </a>
+            the link <a href="https://forms.gle/ZgJm3vWxh28LAXbE9"> https://forms.gle/ZgJm3vWxh28LAXbE9 </a>
           </p>
         </div>
 
         <div class="row">
 
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="box featured">
+              <h3>Ph D. Scholars/Students</h3>
+              <h4><sup>Rs</sup>500<span> + 2%<br> transaction charges</span></h4>
+              <div class="btn-wrap">
+                <a href="https://www.onlinesbi.sbi/sbicollect/" class="btn-buy">Register</a>
+              </div>
+            </div>
+          </div>
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
             <div class="box featured">
               <h3>Academia/R&D</h3>
-              <h4><sup>Rs</sup>1000<span></span></h4>
+              <h4><sup>Rs</sup>1000<span> + 2%<br> transaction charges</span></h4>
+
               <div class="btn-wrap">
                 <a href="https://www.onlinesbi.sbi/sbicollect/" class="btn-buy">Register</a>
               </div>
@@ -416,26 +409,18 @@
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
             <div class="box featured">
               <h3>Corporate/Industry </h3>
-              <h4><sup>Rs</sup>2000<span></span></h4>
+              <h4><sup>Rs</sup>1500<span> + 2%<br> transaction charges</span></h4>
               <div class="btn-wrap">
                 <a href="https://www.onlinesbi.sbi/sbicollect/" class="btn-buy">Register</a>
               </div>
             </div>
-          </div>
 
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="box featured">
-              <h3>Ph D. Scholars/Students</h3>
-              <h4><sup>Rs</sup>500<span></span></h4>
-              <div class="btn-wrap">
-                <a href="https://www.onlinesbi.sbi/sbicollect/" class="btn-buy">Register</a>
-              </div>
-            </div>
+
           </div>
         </div>
 
       </div>
-    </section> -->
+    </section>
     <!-- <section id="updates" class="portfoio">
       <div class="container" data-aos="fade-up">
         <div class="section-title">
@@ -501,7 +486,7 @@
 
       </div>
     </section> -->
-    <!-- <section id="contact" class="contact">
+    <section id="contact" class="contact">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
@@ -522,9 +507,15 @@
               <div class="email">
                 <i class="bi bi-envelope"></i>
                 <h4>Email:</h4>
-                <a href="mailto:amrit.doms.nith@gmail.com"><p>amrit.doms.nith@gmail.com</p></a>
-                <a href="mailto:shampy@nith.ac.in"><p>shampy@nith.ac.in</p></a>
-                <a href="mailto:adil.dms@nith.ac.in"><p>adil.dms@nith.ac.in</p></a>
+                <a href="mailto:amrit.doms.nith@gmail.com">
+                  <p>amrit.doms.nith@gmail.com</p>
+                </a>
+                <a href="mailto:shampy@nith.ac.in">
+                  <p>shampy@nith.ac.in</p>
+                </a>
+                <a href="mailto:adil.dms@nith.ac.in">
+                  <p>adil.dms@nith.ac.in</p>
+                </a>
               </div>
 
               <div class="phone">
@@ -548,11 +539,11 @@
         </div>
 
       </div>
-    </section> -->
+    </section>
   </main>
 
 
-  <!-- <footer id="footer">
+  <footer id="footer">
 
 
     <div class="container">
@@ -564,13 +555,15 @@
           href="https://github.com/SubramanyamSahoo">Subramanyam Sahoo</a>
       </div>
     </div>
-  </footer> -->
+  </footer>
 
   <div id="preloader"></div>
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
       class="bi bi-arrow-up-short"></i></a>
 
   <script src="assets/vendor/aos/aos.js"></script>
+  <script src="forms/contact-us.js"></script>
+
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>

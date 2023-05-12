@@ -50,17 +50,29 @@
 
 
 
-      <a href="https://nith.ac.in/" class="logo"><img src="https://nith.ac.in/uploads/settings/15795036012617.png"
-          alt="logo" class="img-fluid"></a>
+      <a href="https://nith.ac.in/" class="logo">
+        <img src="./assets/img/nith-logo.png" alt="logo" class="img-fluid">
+      </a>
 
       <nav id="navbar" class="navbar">
         <ul>
           <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
           <li><a class="nav-link scrollto" href="#about">About Us</a></li>
-          <li><a class="nav-link scrollto" href="#services">Conference</a></li>
-          <li><a class="nav-link scrollto" href="workshop.html">Workshop</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Events
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="workshop.html">Workshop</a></li>
+              <!-- <li><hr class="dropdown-divider"></li> -->
+              <li><a class="dropdown-item" href="#">Conference</a></li>
+              <!-- <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+            </ul>
+          </li>
+          <!-- <li><a class="nav-link scrollto" href="#services">Conference</a></li> -->
           <li><a class="nav-link scrollto" href="#pricing">Registration</a></li>
-          <li><a class="nav-link scrollto" href="#updates">Updates</a></li>
+          <li><a class="nav-link" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions"
+            aria-controls="offcanvasWithBothOptions">Updates</a></li>
           <li><a class="nav-link scrollto" href="#team">Team</a></li>
           <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
         </ul>
@@ -72,7 +84,7 @@
 
 
   <section id="hero" class="d-flex justify-cntent-center align-items-center">
-    <div id="heroCarousel" data-bs-interval="5000" class="container carousel carousel-fade" data-bs-ride="carousel">
+    <div id="heroCarousel" class="container carousel carousel-fade">
 
 
       <div class="carousel-item active">
@@ -81,7 +93,8 @@
 
           <h2 class="animate__animated animate__fadeInDown">Advances in Marketing Paradigms for Research, Innovation and
             Technology<br> (AMRIT 2023)</h2>
-          <p class="animate__animated animate__fadeInUp">An Initiative of <strong>Department of Management Studies</strong> <br>National
+          <p class="animate__animated animate__fadeInUp">An Initiative of <strong>Department of Management
+              Studies</strong> <br>National
             Institute of Technology Hamirpur
           <h2 class="animate__animated animate__fadeInUp"> Date: 17.07.2023 & 18.07.2023</h2>
 
@@ -104,9 +117,10 @@
             <div class="icon-box">
               <div class="icon"><i class="bi bi-calendar"></i></div>
               <h4 class="title">Important Dates</h4>
-              <p class="description breakword">Abstract Submission Deadline:<br><strong> 21 April 2023</strong><br>
-                Full paper submission:<br> <strong> May 2023</strong><br>
-                Last date of registration:<br><strong> 30 June 2023</strong><br><br>
+              <p class="description breakword">
+                Abstract Submission Deadline:<br><strong> 22 May 2023</strong><br>
+                Full paper submission:<br> <strong>26 June 2023</strong><br>
+                Last date of registration:<br><strong> 10 July 2023</strong><br><br>
                 The presenting authors suppose to be
                 registered by 30 June 2023 for inclusion in
                 conference proceedings.
@@ -161,7 +175,7 @@
                 Register after payment using the link
                 <!-- <div class="breakword"> -->
                 <a href="https://forms.gle/LFdjKcF3iUuGedQ6">https://forms.gle/LFdjKcF3iUuGedQ6</a>
-              <!-- </div> -->
+                <!-- </div> -->
               </p>
             </div>
           </div>
@@ -198,7 +212,8 @@
 
         <div class="row content">
           <div class="col-lg-6">
-            <img src="./assets/img/nith_gate.jpg" alt="NITH" width="540" height="405">
+            <img src="./assets/img/nith_gate.jpg" alt="NITH" width="100%" height="auto">
+
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0">
             <h2>Department</h2>
@@ -312,21 +327,21 @@
                 <div class="col-lg-4 col-md-6 portfolio-item filter-web">
                   <img src="./assets/img/Journals/journal1.jpg" class="img-fluid" alt="">
                   <div class="portfolio-info">
-                    
+
                     <!-- <p>details</p> -->
                   </div>
                 </div>
                 <div class="col-lg-4 col-md-6 portfolio-item filter-web">
                   <img src="./assets/img/Journals/journal2.png" class="img-fluid" alt="">
                   <div class="portfolio-info">
-                
+
                     <!-- <p>details</p> -->
                   </div>
                 </div>
                 <div class="col-lg-4 col-md-6 portfolio-item filter-web">
                   <img src="./assets/img/Journals/Journal3.png" class="img-fluid" alt="">
                   <div class="portfolio-info">
-                    
+
                     <!-- <p>details</p> -->
                   </div>
                 </div>
@@ -412,6 +427,15 @@
         </div>
 
         <div class="row">
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="box featured">
+              <h3>Ph D. Scholars/Students</h3>
+              <h4><sup>Rs</sup>500<span></span></h4>
+              <div class="btn-wrap">
+                <a href="https://www.onlinesbi.sbi/sbicollect/" class="btn-buy">Register</a>
+              </div>
+            </div>
+          </div>
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
             <div class="box featured">
@@ -433,30 +457,38 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="box featured">
-              <h3>Ph D. Scholars/Students</h3>
-              <h4><sup>Rs</sup>500<span></span></h4>
-              <div class="btn-wrap">
-                <a href="https://www.onlinesbi.sbi/sbicollect/" class="btn-buy">Register</a>
-              </div>
-            </div>
-          </div>
+
         </div>
 
       </div>
     </section>
     <section id="updates" class="portfoio">
+    <!-- <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions"
+      aria-controls="offcanvasWithBothOptions">Enable both scrolling & backdrop</button> -->
+
+    <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
+      aria-labelledby="offcanvasWithBothOptionsLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Updates</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <p>Recent events and updates</p>
+        <div id="latest"></div>
+      </div>
+    </div>
+  </section>
+
+    <!-- <section id="updates" class="portfoio">
       <div class="container" data-aos="fade-up">
         <div class="section-title">
           <h2>Updates</h2>
           <p>List of current events</p>
         </div>
-        <!-- Fetch latest updates
-           <div id="latest"></div> -->
-
+       
+        
       </div>
-    </section>
+    </section> -->
     <section id="team" class="team section-bg">
       <div class="container" data-aos="fade-up">
 
@@ -509,6 +541,27 @@
           </div>
         </div>
 
+        <div class="row" id="newTeam">
+          <div class="col-lg mt-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="member d-flex align-items-start">
+              <!-- <div class="pic"><img src="assets/img/team/dir.jpg" class="img-fluid" alt=""></div> -->
+              <div class="member-info">
+                <h4>Members</h4>
+                <span>NIT Hamirpur</span>
+                <!-- <p>Patron</p> -->
+                <p>
+                <ul class="description">
+                  <li>Dr. Somesh Sharma, NIT Hamirpur</li>
+                  <li>Dr. Rajiv Kumar Sharma, NIT Hamirpur</li>
+                  <li>Dr. Sachin Kuamr, NIT Hamirpur</li>
+                  <li>Dr. Neeraj Dhiman, NIT Hamirpur</li>
+                  <li>Dr. Richa Joshi, NIT Hamirpur</li>
+                </ul>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
 
       </div>
     </section>
@@ -533,9 +586,15 @@
               <div class="email">
                 <i class="bi bi-envelope"></i>
                 <h4>Email:</h4>
-                <a href="mailto:amrit.doms.nith@gmail.com"><p>amrit.doms.nith@gmail.com</p></a>
-                <a href="mailto:shampy@nith.ac.in"><p>shampy@nith.ac.in</p></a>
-                <a href="mailto:adil.dms@nith.ac.in"><p>adil.dms@nith.ac.in</p></a>
+                <a href="mailto:amrit.doms.nith@gmail.com">
+                  <p>amrit.doms.nith@gmail.com</p>
+                </a>
+                <a href="mailto:shampy@nith.ac.in">
+                  <p>shampy@nith.ac.in</p>
+                </a>
+                <a href="mailto:adil.dms@nith.ac.in">
+                  <p>adil.dms@nith.ac.in</p>
+                </a>
               </div>
 
               <div class="phone">
@@ -587,78 +646,33 @@
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.slim.js"
-    integrity="sha512-G1QAKkF7DrLYdKiz55LTK3Tlo8Vet2JnjQHuJh+LnU0zimJkMZ7yKZ/+lQ/0m94NC1EisSVS1b35jugu3wLdQg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.slim.js" crossorigin="anonymous"
+    referrerpolicy="no-referrer"></script>
   <script>
     function fetch_events() {
-      fetch("https://raw.githubusercontent.com/suyash-srivastava-dev/testrepo/main/fetchData.json").then(res => res.json())
+      fetch("https://raw.githubusercontent.com/suyash-srivastava-dev/data/main/updates.json").then(res => res.json())
         .then(res => {
           str_body = ""
-          str_body += `<div class="row portfolio-container" >`
           res.forEach(r => {
             str_body +=
               `
-        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-        <img src="${r["thumbnailUrl"]}" class="img-fluid" alt="">
-        <div class="portfolio-info">
-          <h4>title</h4>
-          <p>t</p>
-          <a href="${r["url"]}" data-gallery="portfolioGallery"
-            class="portfolio-lightbox preview-link" title="${r["title"]}"><i class="bx bx-plus"></i></a>
-          <a href="${r["url"]}" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-        </div>
-      </div>
-        `
+              <div class="card mb-3">
+                <img src="${r["img"]}" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">${r["title"]}</p>
+                  <p class="card-text"><small class="text-muted">${r["details"]}</small></p>
+                </div>
+              </div>
+              `
           });
-          str_body += `</div>`
           $("#latest").html(str_body)
         })
+
     }
 
-    // function fetch_advisory_team() {
-    //   fetch("https://raw.githubusercontent.com/suyash-srivastava-dev/data/main/AdvisoryCommitee.json").then(res => res.json())
-    //     .then(res => {
-    //       str_body = ""
-    //       res.forEach(r => {
-    //         let myArray = r["Names"].split(",");
-    //         if (myArray[2] === undefined) {
-    //           str_body +=
-    //             `
-    //         <div class="col-lg-3 mt-4" data-aos="fade-up" data-aos-delay="100">
-    //         <div class="member d-flex align-items-start">
-    //           <!-- <div class="pic"><img src="https://nith.ac.in/uploads/topics/hms16438810105577.jpg" class="img-fluid" alt=""></div> -->
-    //           <div class="">
-    //             <h4>${myArray[0]}</h4>
-    //             <span></span>
-    //             <p>${myArray[1]}</p>
-    //           </div>
-    //         </div>
-    //       </div>      
-    //     `
-    //         }
-    //         else {
-    //           str_body +=
-    //             `
-    //         <div class="col-lg-3 mt-4" data-aos="fade-up" data-aos-delay="100">
-    //         <div class="member d-flex align-items-start">
-    //           <!-- <div class="pic"><img src="https://nith.ac.in/uploads/topics/hms16438810105577.jpg" class="img-fluid" alt=""></div> -->
-    //           <div class="">
-    //             <h4>${myArray[0]}</h4>
-                
-    //             <span>${myArray[1]}</span>
-    //             <p>${myArray[2]}</p>
-    //           </div>
-    //         </div>
-    //       </div>      
-    //     `
-    //         }
-    //       });
-    //       $("#advisoryMembers").html(str_body)
-    //     })
-    // }
-    
-    
+
+
     function fetch_team() {
       fetch("https://raw.githubusercontent.com/suyash-srivastava-dev/data/main/team.json").then(res => res.json())
         .then(res => {
@@ -676,7 +690,6 @@
               </div>
             </div>
           </div>
-        
         `
           });
           $("#newTeam").html(str_body)
