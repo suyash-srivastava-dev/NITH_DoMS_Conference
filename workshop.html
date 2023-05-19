@@ -61,15 +61,11 @@
               Events
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Workshop</a></li>
-              <!-- <li><hr class="dropdown-divider"></li> -->
+              <li><a class="dropdown-item" href="#services">Workshop</a></li>
               <li><a class="dropdown-item" href="index.html">Conference</a></li>
-              <!-- <li><a class="dropdown-item" href="#">Something else here</a></li> -->
             </ul>
           </li>
-          <!-- <li><a class="nav-link scrollto" href="workshop.html">Workshop</a></li> -->
           <li><a class="nav-link scrollto" href="#pricing">Registration</a></li>
-          <!-- <li><a class="nav-link scrollto" href="#updates">Updates</a></li>-->
           <li><a class="nav-link scrollto" href="#visit">Paces to Visit</a></li>
           <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
         </ul>
@@ -176,11 +172,7 @@
                 </li>
               </ul>
               </p>
-              <!-- <center>
-                <div class="pricing btn-wrap">
-                  <a href="#pricing" class="btn-buy">Register</a>
-                </div>
-              </center> -->
+            
               <p class="description"><br><strong>Who can participate?</strong><br>
                 Faculty Members, Research Scholars, Post-graduate &
                 Graduate students, Industry professionals</p>
@@ -302,54 +294,7 @@
               </p>
             </div>
           </div>
-          <!-- <div class="col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="200">
-            <div class="icon-box">
-              <i class="bi bi-bar-chart"></i>
-              <h4><a href="#services">Publication Scope</a></h4>
-              <p>All accepted papers will be published in the Book of
-                Refereed Conference Proceedings. Selected papers
-                will be published in referred journals (with ISSN
-                number, indexed in SSCI, ABDC & Scopus)</p>
-              <br>
-              <ul>
-                <li>Global
-                  Business and
-                  Organizational
-                  Excellence
-                  (ABDC & Scopus)</li>
-                <li>Journal of
-                  Service
-                  Management
-                  (SSCI, ABDC &
-                  Scopus)</li>
-                <li>Virtual
-                  Economics
-                  (Scopus)</li>
-              </ul>
-
-              <div class="row portfolio-container">
-                <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-                  <img src="./assets/img/Journals/journal1.jpg" class="img-fluid" alt="">
-                  <div class="portfolio-info">
-
-                  </div>
-                </div>
-                <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-                  <img src="./assets/img/Journals/journal2.png" class="img-fluid" alt="">
-                  <div class="portfolio-info">
-
-                  </div>
-                </div>
-                <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-                  <img src="./assets/img/Journals/Journal3.png" class="img-fluid" alt="">
-                  <div class="portfolio-info">
-
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div> -->
-          <div class="col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
+        <div class="col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
             <div class="icon-box">
               <i class="bi bi-binoculars"></i>
               <h4><a href="#services">Topics to be covered</a></h4>
@@ -437,15 +382,7 @@
             glaciers and snow-capped mountains. The capital city of Himachal Pradesh is Shimla.
           </p>
         </div>
-        <!-- <div class="row content">
-        <div class="col-md-4">
-          <img src="https://res.cloudinary.com/thrillophilia/image/upload/c_fill,f_auto,fl_progressive.strip_profile,g_auto,q_auto/v1/filestore/py04lc9rgy5t7zk2jkrvur1evkii_shutterstock_714519499.jpg" alt="Manali" width="100%" height="auto">
-        </div>
-        <div class="col-md-4">
-          <img src="https://www.tourmyindia.com/blog//wp-content/uploads/2021/04/Best-Places-to-Visit-in-Shimla.jpg" alt="Manali" width="100%" height="auto">
-          <center><h3>Shimla</h3></center>
-        </div>
-        </div> -->
+      
         <!-- Gallery -->
         <div class="row">
           <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
@@ -494,11 +431,7 @@
           <center><p>Lahaul Spiti Valley</p></center>
 
           </div>
-          <!-- end of 2 lines-->
         </div>
-        <!-- Gallery -->
-
-
       </div>
 
     </section>
@@ -584,105 +517,10 @@
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.slim.js"
     integrity="sha512-G1QAKkF7DrLYdKiz55LTK3Tlo8Vet2JnjQHuJh+LnU0zimJkMZ7yKZ/+lQ/0m94NC1EisSVS1b35jugu3wLdQg=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script>
-    function fetch_events() {
-      fetch("https://raw.githubusercontent.com/suyash-srivastava-dev/testrepo/main/fetchData.json").then(res => res.json())
-        .then(res => {
-          str_body = ""
-          str_body += `<div class="row portfolio-container" >`
-          res.forEach(r => {
-            str_body +=
-              `
-        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-        <img src="${r["thumbnailUrl"]}" class="img-fluid" alt="">
-        <div class="portfolio-info">
-          <h4>title</h4>
-          <p>t</p>
-          <a href="${r["url"]}" data-gallery="portfolioGallery"
-            class="portfolio-lightbox preview-link" title="${r["title"]}"><i class="bx bx-plus"></i></a>
-          <a href="${r["url"]}" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-        </div>
-      </div>
-        `
-          });
-          str_body += `</div>`
-          $("#latest").html(str_body)
-        })
-    }
-
-    function fetch_advisory_team() {
-      fetch("https://raw.githubusercontent.com/suyash-srivastava-dev/data/main/AdvisoryCommitee.json").then(res => res.json())
-        .then(res => {
-          str_body = ""
-          res.forEach(r => {
-            let myArray = r["Names"].split(",");
-            if (myArray[2] === undefined) {
-              str_body +=
-                `
-            <div class="col-lg-3 mt-4" data-aos="fade-up" data-aos-delay="100">
-            <div class="member d-flex align-items-start">
-              <!-- <div class="pic"><img src="https://nith.ac.in/uploads/topics/hms16438810105577.jpg" class="img-fluid" alt=""></div> -->
-              <div class="">
-                <h4>${myArray[0]}</h4>
-                <span></span>
-                <p>${myArray[1]}</p>
-              </div>
-            </div>
-          </div>      
-        `
-            }
-            else {
-              str_body +=
-                `
-            <div class="col-lg-3 mt-4" data-aos="fade-up" data-aos-delay="100">
-            <div class="member d-flex align-items-start">
-              <!-- <div class="pic"><img src="https://nith.ac.in/uploads/topics/hms16438810105577.jpg" class="img-fluid" alt=""></div> -->
-              <div class="">
-                <h4>${myArray[0]}</h4>
-                
-                <span>${myArray[1]}</span>
-                <p>${myArray[2]}</p>
-              </div>
-            </div>
-          </div>      
-        `
-            }
-          });
-          $("#advisoryMembers").html(str_body)
-        })
-    }
-    function fetch_team() {
-      fetch("https://raw.githubusercontent.com/suyash-srivastava-dev/data/main/team.json").then(res => res.json())
-        .then(res => {
-          str_body = ""
-          res.forEach(r => {
-            str_body +=
-              `
-            <div class="col-lg-6 mt-4" data-aos="fade-up" data-aos-delay="100">
-            <div class="member d-flex align-items-start">
-              <div class="pic"><img src="${r["img"]}" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>${r["name"]}</h4>
-                <span>${r["rank"]}</span>
-                <p>${r["description"]}</p>
-              </div>
-            </div>
-          </div>
-        
-        `
-          });
-          $("#newTeam").html(str_body)
-        })
-    }
-  </script>
-  <script>fetch_events()
-  </script>
-  <script> fetch_team()</script>
-  <script>fetch_advisory_team()</script>
+ 
   <script src="assets/js/main.js"></script>
 
 </body>
