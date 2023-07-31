@@ -1,6 +1,7 @@
 # NITH_DoMS_Conference
 
-Website built for the conference at NITH.
+Website built for the conference at NITH. 
+**Official site:** [https://nith.ac.in/amrit2023/index.html](https://nith.ac.in/amrit2023/index.html)
 
 ## Preview
 
